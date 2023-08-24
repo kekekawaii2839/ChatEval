@@ -51,7 +51,7 @@ class ClaudeChat(BaseChatModel):
     
     def generate_response(self, prompt: str) -> LLMResult:
         messages = self._construct_messages(prompt)
-        anthropic = Anthropic()
+        anthropic = Anthropic(proxies={"http://": "http://127.0.0.1:33210", "https://": "http://127.0.0.1:33210"})
         result = anthropic.completions.create(prompt=messages, **self.args.dict())
         return LLMResult(
             content=result.completion,
@@ -62,7 +62,7 @@ class ClaudeChat(BaseChatModel):
     
     async def agenerate_response(self, prompt: str) -> LLMResult:
         messages = self._construct_messages(prompt)
-        anthropic = AsyncAnthropic()
+        anthropic = AsyncAnthropic(proxies={"http://": "http://127.0.0.1:33210", "https://": "http://127.0.0.1:33210"})
         result = await anthropic.completions.create(prompt=messages, **self.args.dict())
         return LLMResult(
             content=result.completion,

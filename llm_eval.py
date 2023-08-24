@@ -1,9 +1,9 @@
 import os
 
 # always remember to put these lines at the top of your code if you are using clash
-os.environ["http_proxy"] = "http://127.0.0.1:7890"
-os.environ["https_proxy"] = "http://127.0.0.1:7890"
-os.environ["all_proxy"] = "socks5://127.0.0.1:7890"
+os.environ["http_proxy"] = "http://127.0.0.1:33210"
+os.environ["https_proxy"] = "http://127.0.0.1:33210"
+os.environ["all_proxy"] = "socks5://127.0.0.1:33210"
 
 import json
 from eval_helper.get_evaluation import get_evaluation
@@ -13,7 +13,7 @@ from argparse import ArgumentParser
 
 parser = ArgumentParser()
 
-parser.add_argument("--task", type=str, default="llm_eval/multi_role/only_static_assign/faireval/two_turns_sequential/two_different_role/calc_score_comparison/gpt_35_0301")
+parser.add_argument("--task", type=str, default="llm_eval/multi_role/only_static_assign/faireval/two_turns_concurrent/two_different_role/calc_score_comparison/gpt_35_0301")
 parser.add_argument("--data_path", type=str, default="./agentverse/tasks/llm_eval/data/faireval/preprocessed_data/test.json")
 parser.add_argument("--output_dir", type=str, default="./outputs/llm_eval/test111")
 parser.add_argument("--reverse_input", default=False, action="store_true")
