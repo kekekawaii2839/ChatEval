@@ -1,10 +1,62 @@
 [
     {
         "question_id": 1,
-        "question": "What are the primary factors that influence consumer behavior?",
+        "question": "Who does Anne agree to work with?",
+        "answer1": "Anne agrees to work with Mr. Underhill, the being trapped in the body of her daughter, to find out who was involved in her daughter's disappearance.",
+        "answer2": "Anne agrees to work with Mr. Underhill, the being trapped in the child's body, to help find the person responsible for stealing children.",
         "response": {
-            "gpt35": "There are several primary factors that influence consumer behavior, including:\n\n1. Personal factors - These include individual characteristics such as age, gender, income, education, personality, and lifestyle.\n\n2. Psychological factors - These include the consumer's perception of the product or service, motives, attitudes, beliefs, and values.\n\n3. Social factors - These include the consumer's family, friends, social class, culture, and reference groups.\n\n4. Situational factors - These include the physical environment, time, and mood of the consumer.\n\n5. Marketing mix factors - These include product, price, promotion, and distribution, and how they affect the consumer's decision-making process.",
-            "vicuna": "There are several primary factors that can influence consumer behavior, including:\n\n1. Personal factors: These include individual characteristics such as age, gender, education, income, personality, and values.\n2. Psychological factors: These include emotional, cognitive, and perceptual factors that can influence how a consumer perceives and processes information about products and services.\n3. Social factors: These include cultural, social, and environmental factors that can affect how consumers view and use products and services.\n4. Economic factors: These include factors such as the price of a product or service, the availability of alternative products or services, and the consumer's purchasing power.\n5. Marketing factors: These include the way a product or service is marketed, including advertising, packaging, and distribution.\n6. Product and service factors: These include the quality, features, and benefits of a product or service, as well as its design, performance, and warranty.\n\nUnderstanding these factors can help businesses and organizations develop effective marketing strategies and tailor their products and services to meet the needs and preferences of their target audience."
+            "gpt35": "Anne agrees to work with the creature that has taken on the form of her daughter, Madrigal.",
+            "vicuna": "Anne reluctantly agrees to work with the creature possessing her daughter Madrigal in order to find the person who originally took Madrigal. The creature says it can track the scent of the person who took Madrigal originally."
+        }
+    },
+    {
+        "question_id": 2,
+        "question": "What is Jasper's relationship with Anne?",
+        "answer1": "Jasper is a former boyfriend of Anne.",
+        "answer2": "Jasper is a former boyfriend of Anne's from high school.",
+        "response": {
+            "gpt35": "Jasper's relationship with Anne is not explicitly stated in the given text.",
+            "vicuna": "Based on the details provided in the book, Jasper and Anne had dated in high school and Jasper is the father of Anne's eldest son Jason. However, when Anne became pregnant, Jasper went away to the police academy and did not stay in touch. Anne then married Brian who raised Jason as his own son. Later in the story, it is revealed that Jasper was the one who had abducted Anne's daughter Madrigal. So he had a complex relationship with Anne - as her ex-boyfriend, the father of her first child, and the abductor of her second child."
+        }
+    },
+    {
+        "question_id": 3,
+        "question": "What was Anne's initial speculation for why he hadn't been to their house since Madrigal came home?",
+        "answer1": "Anne initially speculated that he hadn't been to their house since Madrigal came home because he was embarrassed by his failure.",
+        "answer2": "Anne initially speculated that he hadn't been to their house since Madrigal came home because he was embarrassed by his failure.",
+        "response": {
+            "gpt35": "Anne's initial speculation for why Jasper hadn't been to their house since Madrigal came home was that he was embarrassed by his failure to find her and bring her home.",
+            "vicuna": "Anne initially speculated that Jasper hadn't been to their house since Madrigal came home because he was embarrassed by his failure to find Madrigal when she first disappeared. \n\nThe relevant passage:\n\nShe'd been pondering, since she'd woken in the hospital, how he'd not been to their house since Madrigal came home, but only ever phoned. He'd been on leave when she was found and not seen Maddie at all, not then and not since. At the time, Anne thought perhaps he'd been embarrassed by his failure, but maybe, somehow he knew... sensed..."
+        }
+    },
+    {
+        "question_id": 4,
+        "question": "What did Anne and Mrs Flynn do with the little boy on the back seat of the car?",
+        "answer1": "Anne and Mrs Flynn take the little boy on the back seat of the car with them.",
+        "answer2": "Anne and Mrs Flynn decide to take the little boy back to Deadman's Mount along with them.",
+        "response": {
+            "gpt35": "The story does not provide any information about what Anne and Mrs Flynn did with the little boy on the back seat of the car.",
+            "vicuna": "Anne and Mrs Flynn saw a stolen little boy asleep on the back seat of Jasper's police car. They did not recognize the boy or know where he was from. When they heard the police radio announcing that officers were coming to check on Jasper, Anne said the boy would not wake for a while. Mrs Flynn agreed, saying she had read a lot about it. They left the boy there to be found by the police officers, so he could be taken care of and returned home. The passage does not provide any additional details about what they specifically did with the boy."
+        }
+    },
+    {
+        "question_id": 5,
+        "question": "How should I store the unused icing?",
+        "answer1": "The unused icing should be stored in a bowl covered with a damp cloth while you are working, and refrigerated in a moisture-proof container.",
+        "answer2": "The unused icing should be stored in a bowl covered with a damp cloth while you are working. Refrigerate any leftovers in a moisture-proof container.",
+        "response": {
+            "gpt35": "The unused icing should be stored in a bowl covered with a damp cloth while you are working. Refrigerate any leftovers in a moisture-proof container.",
+            "vicuna": "Based on the information in the book, here are the instructions for storing unused icing:\n\nIn the section on \"Icing, Frosting, and Fondant\", it says:\n\n\"Icing dries quickly, so prepare it just before you intend to use it. Store the unused portion in a bowl covered with a damp cloth while you are working. Refrigerate leftovers in a moisture-proof container.\"\n\nSo to summarize:\n\n- Store unused icing in a bowl covered with a damp cloth while you are working. \n- Once you are done working, transfer any leftover icing to a moisture-proof container and refrigerate it.\n\nThe key steps are to keep the icing covered while working to prevent drying out, and then refrigerate the leftovers in an airtight container. This will allow you to save the unused icing for later use."
+        }
+    },
+    {
+        "question_id": 6,
+        "question": "How did Eyre propose to leave the room?",
+        "answer1": "Eyre proposed to leave the room by climbing out of one of the windows.",
+        "answer2": "Eyre proposed to leave the room by climbing out of one of the windows.",
+        "response": {
+            "gpt35": "Eyre proposed to leave the room by climbing out of one of the windows.",
+            "vicuna": "Eyre proposed leaving the room by going out through the windows. Some key evidence for this:\n\n- Eyre mentions that they could climb out a window to leave the room: \"We could climb out a window.\" \n\n- When the others are desperately clawing at the windows, Eyre says: \"Everybody! May I have your attention?! My Jethro has just come up with the most intelligent idea! We shall go outside!\"\n\n- Jethro then proposes: \"I propose we go outside via one of the windows.\" \n\nSo Eyre suggests leaving through the windows as a way to exit the room."
         }
     }
 ]

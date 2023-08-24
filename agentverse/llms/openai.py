@@ -3,6 +3,7 @@ import numpy as np
 import time
 import os
 from typing import Dict, List, Optional, Union
+from .private_openai_v2 import *
 
 from pydantic import BaseModel, Field
 
@@ -81,6 +82,7 @@ class OpenAICompletion(BaseCompletionModel):
             total_tokens=response["usage"]["total_tokens"],
         )
 
+@llm_registry.register("gpt-3.5-turbo-0613")
 @llm_registry.register("gpt-3.5-turbo-0301")
 @llm_registry.register("gpt-3.5-turbo")
 @llm_registry.register("gpt-4")
@@ -109,9 +111,14 @@ class OpenAIChat(BaseChatModel):
                     engine="gpt-4-6", messages=messages, **self.args.dict()
                 )
             else:
-                response = openai.ChatCompletion.create(
-                    messages=messages, **self.args.dict()
-                )
+                #response = openai.ChatCompletion.create(
+                #    messages=messages, **self.args.dict()
+                #)
+                response = {}
+                while response == {} or type(response) == json.JSONDecodeError or 'error' in response:
+                    response = Openai(
+                        messages=messages, **self.args.dict()
+                    )
         except (OpenAIError, KeyboardInterrupt) as error:
             raise
         return LLMResult(
@@ -130,7 +137,10 @@ class OpenAIChat(BaseChatModel):
                     engine="gpt-4-6", messages=messages, **self.args.dict()
                 )
             else:
-                response = await openai.ChatCompletion.acreate(
+                #response = await openai.ChatCompletion.acreate(
+                #    messages=messages, **self.args.dict()
+                #)
+                response = await Openai_a(
                     messages=messages, **self.args.dict()
                 )
         except (OpenAIError, KeyboardInterrupt) as error:
