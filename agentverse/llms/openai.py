@@ -115,7 +115,7 @@ class OpenAIChat(BaseChatModel):
                 #    messages=messages, **self.args.dict()
                 #)
                 response = {}
-                while response == {} or type(response) == json.JSONDecodeError or 'error' in response:
+                while response == {} or type(response) == json.JSONDecodeError or type(response) == TimeoutError or'error' in response:
                     response = Openai(
                         messages=messages, **self.args.dict()
                     )
